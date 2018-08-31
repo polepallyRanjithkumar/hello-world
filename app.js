@@ -41,7 +41,7 @@ fsf.readFile("source.html",function(error,html){
         var cancelDetails;
         console.log("response-----",res,qu);
         formDetails.push(qu.query.mytext);
-        console.log("check----",formDetails,eventEmitter);
+        console.log("check----Responses",formDetails,eventEmitter);
         for(var i=0;i<formDetails.length;i++){
             if(formDetails[i] && formDetails[i] != undefined){
             res.write("<b>"+customModule.modifiedData(formDetails[i])+"<span class='fa fa-remove' style='font-size:17px;color:red;' onclick='myFunction()'></span>"+"</b>"+"<br>")
